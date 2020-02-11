@@ -13,11 +13,11 @@ class UserCard extends Component{
             <div className="cardContent">
             <h2>Name:{this.props.myInfoData.name}</h2>
             {/* <p className="username">Username:{this.props.myInfoData.username} </p> */}
-            <p className="login">Login:{this.props.myInfoData.login}</p>
-            <p>location:{this.props.myInfoData.location}</p>
-            <p>Followers:{this.props.myInfoData.Followers}</p>
-            <p>Following:{this.props.myInfoData.Following}</p>
-            <p>Bio:{this.props.myInfoData.Bio}</p>
+            <p className="login">Login: {this.props.myInfoData.login}</p>
+            <p>location: {this.props.myInfoData.location}</p>
+            <p>Followers: {this.props.myInfoData.followers}</p>
+            <p>Following: {this.props.myInfoData.following}</p>
+            <p>Bio: {this.props.myInfoData.bio}</p>
             </div>
             </div>
 
@@ -33,23 +33,23 @@ class UserCard extends Component{
 export default UserCard;
 
 const Card = styled.div `
-    padding: 3%;
-    margin: 3%;
-    max-width: 300px;
-    max-height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: white;
-    border: 2px solid #99f2c8;
-    border-radius: 3px;
-    margin: 0 auto;
+  flex-wrap: wrap;
+  align-items:center;
+  margin: 0 auto;
+  background-color: #78ffd6;
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px -2px #000;
+  margin-bottom: 20px;
 
 `;
 
 const Image = styled.img`
-   max-width: 200px;
-   max-height: 200px;
+  width: 120px;
+  height: 120px;
+  border-radius: 3px;
+  margin-right: 20px;
 
 `;
